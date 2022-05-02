@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>player</title>
+</head>
+
+<body>
+    <main>
+        <div class="player-container">
+            <div class="player-painel">
+                <div class="player-controler">
+                    <div class="header-infos">
+                        <div class="player-controler-info">
+                            <h3 class="music-name" id="musicName">
+
+                            </h3>
+                            <p class="artista" id="musicArtista">
+
+                            </p>
+                        </div>
+                        <div id="fav-icon"></div>
+                    </div>
+                </div>
+
+                <div class="player-img">
+                    <img id="imgCapa" src="" alt="">
+                </div>
+
+                <div class="player-controler">
+                    <div class="control">
+                        <div class="controler-timer">
+                            <div class="barra-progress" id="barraProgress">
+                                <div class="timer-bar" id="timeBar"></div>
+                                <div class="point-progress" id="point-progress"></div>
+                            </div>
+                            <div class="area-time">
+                                <p class="timer" id="startTime">0:00</p>
+                                <p class="timer" id="finalTime">0:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="bar-controler">
+                            <div class="controler-sound">
+                                <box-icon name='playlist' type='solid' color='#fff'></box-icon>
+                            </div>
+                            <div class="controlers-buttons">
+                                <box-icon name='skip-previous' id='prev' color='#fff'></box-icon>
+                                <box-icon name='play-circle' id="play" color='#fff'></box-icon>
+                                <box-icon name='skip-next' id="next" color='#fff'></box-icon>
+                            </div>
+                            <div class="controler-sound">
+                                <box-icon name='volume-low' class='volume-point' type='' color='#fff' id="btnVolume"></box-icon>
+                                <div class="volume-area">
+                                    <input type="range" class="volume" id="soundSize">
+                                </div>
+                            </div>
+                        </div>
+                        <audio id="audio-play" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-img-sound">
+            <img id="imgBg" src="assets/img/bolsa-da-fendo-teto-pz.jpg" alt="">
+        </div>
+    </main>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
